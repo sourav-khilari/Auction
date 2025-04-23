@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { deleteAuction, republishAuction } from "../store/slices/auctionSlice";
+import { deleteAuction, republishAuction } from "@/store/slices/auctionSlice";
 
 const CardTwo = ({ imgSrc, title, startingBid, startTime, endTime, id }) => {
   const calculateTimeLeft = () => {

@@ -43,7 +43,7 @@ const Leaderboard = () => {
                     </td>
                     <td className="py-2 px-4">{element.userName}</td>
                     <td className="py-2 px-4">{element.moneySpent}</td>
-                    <td className="py-2 px-4">{element.auctionWon?element.auctionsWon:0}</td>
+                    <td className="py-2 px-4">{element.auctionsWon}</td>
                   </tr>
                 );
               })}

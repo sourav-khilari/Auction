@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { RiAuctionFill } from "react-icons/ri";
 import { MdLeaderboard, MdDashboard } from "react-icons/md";
 import { SiGooglesearchconsole } from "react-icons/si";
@@ -11,18 +11,14 @@ import { FaUserCircle } from "react-icons/fa";
 import { FaFileInvoiceDollar } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { logout } from "../store/slices/userSlice";
+import { logout } from "@/store/slices/userSlice";
 import { Link } from "react-router-dom";
-
 
 const SideDrawer = () => {
   const [show, setShow] = useState(false);
 
   const { isAuthenticated, user } = useSelector((state) => state.user);
-  console.log("auth="+isAuthenticated);
-  console.log("user\n"+user.role);
-  
-  
+
   const dispatch = useDispatch();
   const handleLogout = () => {
     dispatch(logout());
@@ -44,7 +40,7 @@ const SideDrawer = () => {
         <div className="relative">
           <Link to={"/"}>
             <h4 className="text-2xl font-semibold mb-4">
-              Prime<span className="text-[#D6482b]">Bid</span>
+              My<span className="text-[#D6482b]">Bid</span>
             </h4>
           </Link>
           <ul className="flex flex-col gap-3">
@@ -78,7 +74,7 @@ const SideDrawer = () => {
                   <Link
                     to={"/create-auction"}
                     className="flex text-xl font-semibold gap-2 items-center hover:text-[#D6482b] hover:transition-all hover:duration-150"
-                  > 
+                  >
                     <IoIosCreate /> Create Auction
                   </Link>
                 </li>
@@ -192,7 +188,7 @@ const SideDrawer = () => {
               to={"/"}
               className="font-semibold hover:text-[#d6482b] hover:transition-all hover:duration-150"
             >
-              Sourav
+              Sourav Khilari
             </Link>
           </p>
         </div>

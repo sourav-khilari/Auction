@@ -1,6 +1,6 @@
-import CardTwo from "../custom-components/CardTwo";
-import Spinner from "../custom-components/Spinner";
-import { getMyAuctionItems } from "../store/slices/auctionSlice";
+import CardTwo from "@/custom-components/CardTwo";
+import Spinner from "@/custom-components/Spinner";
+import { getMyAuctionItems } from "@/store/slices/auctionSlice";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";

@@ -1,30 +1,64 @@
-import express from "express"
-import { isAuthenticated,isAuthorized } from "../middlewares/auth.js"
-import { 
-    deleteAuction,
-    daletePaymentProof,
-    getAllPaymentProofs,
-    getPaymentProofDetails,
-    updateProofStatus, 
-    fetchAllUsers,monthlyRevenue} from "../controllers/superAdminControllers.js"
+import express from "express";
+import { isAuthenticated, isAuthorized } from "../middlewares/auth.js";
+import {
+  deleteAuctionItem,
+  deletePaymentProof,
+  fetchAllUsers,
+  getAllPaymentProofs,
+  getPaymentProofDetail,
+  monthlyRevenue,
+  updateProofStatus,
+} from "../controllers/superAdminController.js";
 
-const router=express.Router();
+const router = express.Router();
 
+router.delete(
+  "/auctionitem/delete/:id",
+  isAuthenticated,
+  isAuthorized("Super Admin"),
+  deleteAuctionItem
+);
 
+router.get(
+  "/paymentproofs/getall",
+  isAuthenticated,
+  isAuthorized("Super Admin"),
+  getAllPaymentProofs
+);
 
-router.delete("/auctionitem/delete/:id",isAuthenticated,isAuthorized("Super Admin"),deleteAuction)
+router.get(
+  "/paymentproof/:id",
+  isAuthenticated,
+  isAuthorized("Super Admin"),
+  getPaymentProofDetail
+);
 
-router.get("/paymentproofs/getall",isAuthenticated,isAuthorized("Super Admin"),getAllPaymentProofs);
+router.put(
+  "/paymentproof/status/update/:id",
+  isAuthenticated,
+  isAuthorized("Super Admin"),
+  updateProofStatus
+);
 
-router.get("/paymentproof/:id",isAuthenticated,isAuthorized("Super Admin"),getPaymentProofDetails);
+router.delete(
+  "/paymentproof/delete/:id",
+  isAuthenticated,
+  isAuthorized("Super Admin"),
+  deletePaymentProof
+);
 
-router.put("/paymentproofs/status/update/:id",isAuthenticated,isAuthorized("Super Admin"),updateProofStatus);
+router.get(
+  "/users/getall",
+  isAuthenticated,
+  isAuthorized("Super Admin"),
+  fetchAllUsers
+);
 
-router.delete("/paymentproofs/delete/:id",isAuthenticated,isAuthorized("Super Admin"),daletePaymentProof);
-
-router.get("/users/getall",isAuthenticated,isAuthorized("Super Admin"),fetchAllUsers);
-
-router.get("/monthlyincome",isAuthenticated,isAuthorized("Super Admin"),monthlyRevenue);
-
+router.get(
+  "/monthlyincome",
+  isAuthenticated,
+  isAuthorized("Super Admin"),
+  monthlyRevenue
+);
 
 export default router;

@@ -58,7 +58,7 @@ const UpcomingAuctions = () => {
                     <p className="text-stone-600 font-semibold">
                       Starting Bid:
                     </p>{" "}
-                    <p className="text-[#fdba88] font-semibold">
+                    <p className="text-[#fdba88 font-semibold]">
                       Rs. {element.startingBid}
                     </p>{" "}
                   </div>

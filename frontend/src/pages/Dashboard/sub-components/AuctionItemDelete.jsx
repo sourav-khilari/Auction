@@ -1,4 +1,4 @@
-import { deleteAuctionItem } from "../../../store/slices/superAdminSlice";
+import { deleteAuctionItem } from "@/store/slices/superAdminSlice";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -13,7 +13,7 @@ const AuctionItemDelete = () => {
 
   return (
     <>
-      <div className="overflow-x-auto mb-32">
+      <div className="overflow-x-auto mb-10">
         <table className="min-w-full bg-white border-gray-300">
           <thead className="bg-gray-800 text-white">
             <tr>

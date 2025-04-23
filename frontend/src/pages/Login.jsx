@@ -1,4 +1,4 @@
-import { login } from "../store/slices/userSlice";
+import { login } from "@/store/slices/userSlice";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";

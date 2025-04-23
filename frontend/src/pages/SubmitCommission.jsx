@@ -1,4 +1,4 @@
-import { postCommissionProof } from "../store/slices/commissionSlice";
+import { postCommissionProof } from "@/store/slices/commissionSlice";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 

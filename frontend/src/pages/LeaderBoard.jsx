@@ -1,4 +1,4 @@
-import Spinner from "../custom-components/Spinner";
+import Spinner from "@/custom-components/Spinner";
 import React from "react";
 import { useSelector } from "react-redux";
 
@@ -49,7 +49,7 @@ const Leaderboard = () => {
                         </td>
                         <td className="py-2 px-4">{element.userName}</td>
                         <td className="py-2 px-4">{element.moneySpent}</td>
-                        <td className="py-2 px-4">{element.auctionWon}</td>
+                        <td className="py-2 px-4">{element.auctionsWon}</td>
                       </tr>
                     );
                   })}

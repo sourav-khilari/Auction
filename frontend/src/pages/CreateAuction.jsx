@@ -1,4 +1,4 @@
-import { createAuction } from "../store/slices/auctionSlice";
+import { createAuction } from "@/store/slices/auctionSlice";
 import React, { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import { useDispatch, useSelector } from "react-redux";
@@ -44,7 +44,6 @@ const CreateAuction = () => {
 
   const handleCreateAuction = (e) => {
     e.preventDefault();
-   
     const formData = new FormData();
     formData.append("image", image);
     formData.append("title", title);
@@ -174,18 +173,18 @@ const CreateAuction = () => {
             <label className="font-semibold text-xl md:text-2xl">
               Auction Item Image
             </label>
-            <div className="flex items-center justify-center w-full">
+            <div class="flex items-center justify-center w-full">
               <label
                 for="dropzone-file"
-                className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+                class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
               >
-                <div className="flex flex-col items-center justify-center pt-5 pb-6">
+                <div class="flex flex-col items-center justify-center pt-5 pb-6">
                   {imagePreview ? (
                     <img src={imagePreview} alt={title} className="w-44 h-auto"/>
                   ) : (
                     <>
                       <svg
-                        className="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                        class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -202,15 +201,15 @@ const CreateAuction = () => {
                     </>
                   )}
 
-                  <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                    <span className="font-semibold">Click to upload</span> or drag
+                  <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                    <span class="font-semibold">Click to upload</span> or drag
                     and drop
                   </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                  <p class="text-xs text-gray-500 dark:text-gray-400">
                     SVG, PNG, JPG or GIF (MAX. 800x400px)
                   </p>
                 </div>
-                <input id="dropzone-file" type="file" className="hidden" onChange={imageHandler}/>
+                <input id="dropzone-file" type="file" class="hidden" onChange={imageHandler}/>
               </label>
             </div>
           </div>

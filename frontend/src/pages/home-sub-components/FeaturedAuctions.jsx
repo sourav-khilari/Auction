@@ -1,4 +1,4 @@
-import Card from "../../custom-components/Card";
+import Card from "@/custom-components/Card";
 import React from "react";
 import { useSelector } from "react-redux";
 
