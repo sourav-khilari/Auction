@@ -17,7 +17,7 @@ const UpcomingAuctions = () => {
   return (
     <>
       <section className="my-8">
-        <h3 className="text-[#111] text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl">
+        <h3 className="text-white text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl">
           Auctions For Today
         </h3>
         <div className="flex flex-wrap gap-6">
@@ -50,7 +50,7 @@ const UpcomingAuctions = () => {
                       alt={element.title}
                       className="w-16 h-16 2xl:w-10 2xl:h-10"
                     />
-                    <p className="font-extralight text-[#111] text-[12px]">
+                    <p className="font-extralight text-white text-[12px]">
                       {element.title}
                     </p>
                   </div>
@@ -84,7 +84,7 @@ const UpcomingAuctions = () => {
                       alt={element.title}
                       className="w-16 h-16 2xl:w-10 2xl:h-10"
                     />
-                    <p className="font-extralight text-[#111] text-[12px]">
+                    <p className="font-extralight text-white text-[12px]">
                       {element.title}
                     </p>
                   </div>
@@ -117,7 +117,7 @@ const UpcomingAuctions = () => {
                       alt={element.title}
                       className="w-16 h-16 2xl:w-10 2xl:h-10"
                     />
-                    <p className="font-extralight text-[#111] text-[12px]">
+                    <p className="font-extralight text-white text-[12px]">
                       {element.title}
                     </p>
                   </div>

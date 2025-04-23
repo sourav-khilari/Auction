@@ -57,7 +57,7 @@ const ViewAuctionDetails = () => {
                   />
                 </div>
                 <div className="flex flex-col justify-around pb-4">
-                  <h3 className="text-[#111] text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl">
+                  <h3 className="text-white text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl">
                     {auctionDetail.title}
                   </h3>
                   <p className="text-xl font-semibold">

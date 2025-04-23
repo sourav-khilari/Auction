@@ -47,7 +47,7 @@ const About = () => {
         </div>
         <div>
           <h3
-            className={`text-[#111] text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl`}
+            className={`text-white text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl`}
           >
             Our Mission
           </h3>
@@ -61,7 +61,7 @@ const About = () => {
         </div>
         <div>
           <h3
-            className={`text-[#111] text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl`}
+            className={`text-white text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl`}
           >
             Our Values
           </h3>
@@ -78,7 +78,7 @@ const About = () => {
         </div>
         <div>
           <h3
-            className={`text-[#111] text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl`}
+            className={`text-white text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl`}
           >
             Our Story
           </h3>
@@ -92,7 +92,7 @@ const About = () => {
         </div>
         <div>
           <h3
-            className={`text-[#111] text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl`}
+            className={`text-white text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl`}
           >
             Join Us
           </h3>

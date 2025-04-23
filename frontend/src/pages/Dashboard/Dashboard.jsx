@@ -45,25 +45,25 @@ const Dashboard = () => {
             </h1>
             <div className="flex flex-col gap-10">
               <div>
-                <h3 className="text-[#111] text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl">
+                <h3 className="text-white text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl">
                   Monthly Total Payments Received
                 </h3>
                 <PaymentGraph />
               </div>
               <div>
-                <h3 className="text-[#111] text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl">
+                <h3 className="text-white text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl">
                   Users
                 </h3>
                 <BiddersAuctioneersGraph />
               </div>
               <div>
-                <h3 className="text-[#111] text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl">
+                <h3 className="text-white text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl">
                   Payment Proofs
                 </h3>
                 <PaymentProofs />
               </div>
               <div>
-                <h3 className="text-[#111] text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl">
+                <h3 className="text-white text-xl font-semibold mb-2 min-[480px]:text-xl md:text-2xl lg:text-3xl">
                   Delete Items From Auction
                 </h3>
                 <AuctionItemDelete />
