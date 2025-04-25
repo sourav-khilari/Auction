@@ -3,7 +3,7 @@ import {
   getAllPaymentProofs,
   getAllUsers,
   getMonthlyRevenue,
-} from "@/store/slices/superAdminSlice";
+} from "@/store/slices/superAdminSlices";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import AuctionItemDelete from "./sub-components/AuctionItemDelete";

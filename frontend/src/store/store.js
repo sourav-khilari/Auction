@@ -3,7 +3,7 @@ import userReducer from "./slices/userSlice";
 import commissionReducer from "./slices/commissionSlice";
 import auctionReducer from "./slices/auctionSlice";
 import bidReducer from "./slices/bidSlice";
-import superAdminReducer from "./slices/superAdminSlice";
+import superAdminReducer from "./slices/superAdminSlices.js";
 
 export const store = configureStore({
   reducer: {
