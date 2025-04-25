@@ -69,7 +69,7 @@ const About = () => {
             {values.map((element) => {
               return (
                 <li className="text-xl text-stone-600 mb-2" key={element.id}>
-                  <span className="text-black font-bold">{element.title}</span>:{" "}
+                  <span className="text-white font-bold">{element.title}</span>:{" "}
                   {element.description}
                 </li>
               );

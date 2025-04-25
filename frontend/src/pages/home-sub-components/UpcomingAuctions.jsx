@@ -64,7 +64,7 @@ const UpcomingAuctions = () => {
                   </div>
                   <div className="flex flex-col">
                     <p className="text-stone-600 font-bold">Starting Time:</p>
-                    <p className="text-black text-[12px]">{element.startTime}</p>
+                    <p className="text-white text-[12px]">{element.startTime}</p>
                   </div>
                 </Link>
               );
@@ -98,7 +98,7 @@ const UpcomingAuctions = () => {
                   </div>
                   <div className="flex flex-col">
                     <p className="text-stone-600 font-bold">Starting Time:</p>
-                    <p className="text-black  text-[12px]">{element.startTime}</p>
+                    <p className="text-white  text-[12px]">{element.startTime}</p>
                   </div>
                 </Link>
               );
@@ -131,7 +131,7 @@ const UpcomingAuctions = () => {
                   </div>
                   <div className="flex flex-col">
                     <p className="text-stone-600 font-bold">Starting Time:</p>
-                    <p className="text-black  text-[12px]">{element.startTime}</p>
+                    <p className="text-white  text-[12px]">{element.startTime}</p>
                   </div>
                 </Link>
               );
