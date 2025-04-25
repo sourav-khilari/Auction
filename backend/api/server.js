@@ -1,4 +1,4 @@
-import app from "./app.js"
+import app from "../app.js"
 import cloudinary from "cloudinary"
 import serverless from "serverless-http";
 
@@ -10,7 +10,7 @@ cloudinary.v2.config({
 
 export const handler = serverless(app);
 
-// app.listen(process.env.PORT,()=>{
-//     console.log(`server listening on port ${process.env.PORT}`);
+app.listen(process.env.PORT,()=>{
+    console.log(`server listening on port ${process.env.PORT}`);
     
-// })
+})
