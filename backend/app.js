@@ -36,9 +36,17 @@ app.use(
   })
 );
 
+app.use((req, res, next) => {
+  console.log("→ Incoming request:", req.method, req.url);
+  next();
+});
+
 app.get("/api", (req, res) => {
+  consoel.log("API is running...");
   res.send("API is running...");
 });
+
+
 
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/auctionitem", auctionItemRouter);
