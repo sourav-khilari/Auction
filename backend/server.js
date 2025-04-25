@@ -1,5 +1,6 @@
 import app from "./app.js"
 import cloudinary from "cloudinary"
+import serverless from "serverless-http";
 
 cloudinary.v2.config({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -7,8 +8,9 @@ cloudinary.v2.config({
     api_secret: process.env.CLOUDINARY_CLOUD_API_SECRET,
 })
 
+export const handler = serverless(app);
 
-app.listen(process.env.PORT,()=>{
-    console.log(`server listening on port ${process.env.PORT}`);
+// app.listen(process.env.PORT,()=>{
+//     console.log(`server listening on port ${process.env.PORT}`);
     
-})
+// })
