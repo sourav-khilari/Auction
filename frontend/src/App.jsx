@@ -12,7 +12,7 @@ import { fetchLeaderboard, fetchUser } from "./store/slices/userSlice";
 import HowItWorks from "./pages/HowItWorks";
 import About from "./pages/About";
 import { getAllAuctionItems } from "./store/slices/auctionSlice";
-import Leaderboard from "./pages/Leaderboard";
+import Leaderboard from "./pages/Leaderboard.jsx";
 import Auctions from "./pages/Auctions";
 import AuctionItem from "./pages/AuctionItem";
 import CreateAuction from "./pages/CreateAuction";
