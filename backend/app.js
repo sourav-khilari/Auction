@@ -42,7 +42,7 @@ app.use(
 // });
 
 app.get("/api", (req, res) => {
-  consoel.log("API is running...");
+  console.log("API is running...");
   res.send("API is running...");
 });
 
@@ -54,8 +54,8 @@ app.use("/api/v1/bid", bidRouter);
 app.use("/api/v1/commission", commissionRouter);
 app.use("/api/v1/superadmin", superAdminRouter);
 
-endedAuctionCron();
-verifyCommissionCron();
+// endedAuctionCron();
+// verifyCommissionCron();
 connection();
 app.use(errorMiddleware);
 
