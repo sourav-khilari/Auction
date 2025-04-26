@@ -8,9 +8,9 @@ cloudinary.v2.config({
     api_secret: process.env.CLOUDINARY_CLOUD_API_SECRET,
 })
 
-export default serverless(app);
+//export default serverless(app);
 
-// app.listen(process.env.PORT,()=>{
-//     console.log(`server listening on port ${process.env.PORT}`);
+app.listen(process.env.PORT,()=>{
+    console.log(`server listening on port ${process.env.PORT}`);
     
-// })
+})
